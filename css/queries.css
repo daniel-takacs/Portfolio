@@ -1,4 +1,14 @@
 @media screen and (min-width: 768px) {
+ section {
+   margin: 10rem 0;
+ }
+ .section-heading {
+   letter-spacing: 0.3rem;
+   font-size: 5rem;
+ }
+ .nav-list {
+   flex-direction: row;
+ }
   .about-content {
     flex-direction: row;
     justify-content: center;
@@ -29,13 +39,48 @@
   .margin-right {
     margin-right: 2rem;
   }
+  .project-description h6 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  .project-description h2 {
+    font-size: 5rem;
+    margin: 1rem 0;
+  }
+  .project-description p {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
   .social-media-list-bottom li {
     padding: 0;
   }
   .contact-form {
     width: 70%;
+    margin-top: 10rem;
   }
   .icon {
     width: 50%;
   }
+input[type="text"],
+textarea,
+select {
+  border-radius: 1rem;
+  border: none;
+  width: 100%;
+  padding: 2rem;
+  margin: 0.5rem 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+input[type="submit"] {
+  border-radius: 1rem;
+  border: none;
+  width: initial;
+  padding: 2rem 4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.fab {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 }
