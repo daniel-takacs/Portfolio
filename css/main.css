@@ -1,4 +1,6 @@
-/* global */
+/***********/
+/* GLOBAL */
+/**********/
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +9,8 @@
 html {
   font-size: 10px;
   color: white;
-  /*font-family: "Anonymous Pro", monospace;*/
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /*font-family: Georgia, "Times New Roman", Times, serif;*/
+  font-family: "Turret Road", cursive;
 }
 
 body {
@@ -31,7 +33,9 @@ img {
   width: 100%;
 }
 
-/* reusable */
+/***********/
+/* REUSABLE */
+/**********/
 
 .container {
   max-width: 120rem;
@@ -40,7 +44,7 @@ img {
   position: relative;
 }
 section {
-  padding: 1rem 1rem;
+  padding: 1rem 0;
 }
 .section-heading {
   margin: 7rem 0;
@@ -52,7 +56,9 @@ section {
 .section-heading h2 {
   text-transform: uppercase;
 }
-/* header */
+/***********/
+/* HEADER */
+/**********/
 header {
   width: 100%;
   height: 100vh;
@@ -80,7 +86,7 @@ header {
   align-items: center;
   flex-direction: column;
 }
-.nav-list>li {
+.nav-list > li {
   margin: 3rem 2rem;
   position: relative;
 }
@@ -89,7 +95,7 @@ header {
   font-size: 5rem;
   padding: 1rem;
 }
-.nav-link:after {    
+.nav-link:after {
   background: none repeat scroll 0 0 transparent;
   bottom: -5px;
   content: "";
@@ -101,14 +107,13 @@ header {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.nav-link:hover:after { 
-  width: 100%; 
-  left: 0; 
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .top-nav.open {
   top: 0;
-  border-radius: initial;
 }
 
 .menu-toggler {
@@ -175,7 +180,9 @@ header {
   font-weight: 300;
 }
 
-/* about */
+/***********/
+/* ABOUT */
+/**********/
 .about .container {
   justify-content: center;
   align-items: center;
@@ -198,9 +205,13 @@ header {
   margin-top: 2.5rem;
   font-size: 1.8rem;
   line-height: 1.5;
-  letter-spacing: 1.2;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
 }
-/* skills */
+
+/***********/
+/* SKILLS */
+/**********/
 .my-skills {
   margin-top: 5rem;
   display: grid;
@@ -211,12 +222,16 @@ header {
 
 .skill {
   font-size: 2rem;
+  padding-bottom: 2rem;
 }
 .icon {
   width: 20%;
   padding-bottom: 1rem;
 }
-/* projects */
+
+/***********/
+/* PROJECTS */
+/**********/
 .my-projects {
   display: flex;
   flex-direction: column;
@@ -238,10 +253,12 @@ header {
 }
 .link {
   font-size: 2rem;
-  color:gray;
+  color: gray;
 }
 
-/* contact */
+/***********/
+/* CONTACT */
+/**********/
 
 .contact .container {
   display: flex;
@@ -273,10 +290,12 @@ input[type="submit"] {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 input[type="submit"]:hover {
- background-color: #FFB400;
+  background-color: #ffb400;
 }
 
-/* footer */
+/***********/
+/* FOOTER */
+/**********/
 .social-media-list-bottom {
   margin-top: 5rem;
 }
