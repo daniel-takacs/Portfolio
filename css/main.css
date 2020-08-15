@@ -42,6 +42,7 @@ img {
   margin: 0 auto;
   width: 95%;
   position: relative;
+  height: 100%;
 }
 section {
   padding: 1rem 0;
@@ -67,6 +68,9 @@ section {
   right: 0;
   width: 10%;
   background: gray;
+}
+.section-heading > h6 {
+  margin-top: 2rem;
 }
 /***********/
 /* HEADER */
@@ -188,7 +192,7 @@ header {
   user-select: none;
 }
 .landing-text h6 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -205,9 +209,12 @@ header {
 }
 .about-text {
   flex: 1;
+  order: 1;
+  margin-bottom: 2rem;
 }
 .profile-img {
   flex: 1;
+  order: 2;
 }
 .about-content h2 {
   font-size: 8rem;
@@ -244,28 +251,70 @@ header {
 /***********/
 /* PROJECTS */
 /**********/
-.my-projects {
-  display: flex;
+.projects {
   flex-direction: column;
-  margin-bottom: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
-.project-description h6 {
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 2rem 0;
+.all-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.project-description h2 {
-  font-size: 3rem;
-  margin: 1rem 0;
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 20px auto;
+  overflow: hidden;
 }
-.project-description p {
-  font-size: 2rem;
-  margin: 1rem 0;
+.project-description {
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.2);
 }
-.link {
+.project-description > h3 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.project-description > h4 {
   font-size: 2rem;
-  color: gray;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.project-description > p {
+  color: white;
+  font-size: 1.8rem;
+}
+.project-img {
+  flex-basis: 50%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.project-img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.project-img > img {
+  transition: 0.3s ease transform;
+}
+.project-item:hover .project-img > img {
+  transform: scale(1.1);
 }
 
 /***********/
