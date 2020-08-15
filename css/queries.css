@@ -6,6 +6,10 @@
     letter-spacing: 0.3rem;
     font-size: 5rem;
   }
+  .section-heading > h6 {
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+  }
   .landing-text h1 {
     font-size: 14rem;
   }
@@ -32,7 +36,9 @@
     margin-right: 2rem;
     order: 1;
   }
-
+  .skill h6 {
+    font-size: 1.8rem;
+  }
   /* PROJECT */
   .project-item {
     flex-direction: row;
@@ -58,26 +64,23 @@
   .margin-right {
     margin-right: 2rem;
   }
-  .project-description > h6 {
-    font-size: 3rem;
-    font-weight: 400;
-    margin: 2rem 0;
+  .project-description h3 {
+    padding: 1rem 0;
   }
-  .project-description > h2 {
-    font-size: 5rem;
-    margin: 1rem 0;
-  }
-  .project-description > p {
-    font-size: 2rem;
-    margin-bottom: 5rem;
-  }
+ .project-description p {
+   padding: 1rem 0;
+ }
 
   .icon {
     width: 50%;
   }
+  .contact {
+    margin-bottom: 0;
+    
+  }
   .contact-form {
     width: 70%;
-    margin-top: 10rem;
+    margin-top: 1rem;
   }
   input[type="text"],
   textarea,
@@ -87,14 +90,16 @@
     width: 100%;
     padding: 2rem;
     margin: 0.5rem 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.2rem;
   }
   input[type="submit"] {
     border-radius: 1rem;
     border: none;
     width: initial;
     padding: 2rem 4rem;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.2rem;
+    font-weight: 800;
+    font-size: 1.8rem;
   }
   .social-media-list-bottom > li {
     padding: 0;

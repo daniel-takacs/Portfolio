@@ -9,7 +9,6 @@
 html {
   font-size: 10px;
   color: white;
-  /*font-family: Georgia, "Times New Roman", Times, serif;*/
   font-family: "Turret Road", cursive;
 }
 
@@ -66,7 +65,7 @@ section {
   margin: 0 auto;
   left: 0;
   right: 0;
-  width: 10%;
+  width: 15rem;
   background: gray;
 }
 .section-heading > h6 {
@@ -269,7 +268,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   margin: 20px auto;
   overflow: hidden;
 }
@@ -302,20 +300,7 @@ header {
   overflow: hidden;
   position: relative;
 }
-.project-img:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-.project-img > img {
-  transition: 0.3s ease transform;
-}
-.project-item:hover .project-img > img {
-  transform: scale(1.1);
-}
+
 
 /***********/
 /* CONTACT */
@@ -341,17 +326,19 @@ select {
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Turret Road", cursive;
 }
 input[type="submit"] {
   border-radius: 1rem;
   border: none;
   width: initial;
   padding: 1rem 2rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Turret Road", cursive;
+  transition: ease-in-out 0.2s;
 }
 input[type="submit"]:hover {
   background-color: #ffb400;
+  transition: ease-in-out 0.5s;
 }
 
 /***********/
