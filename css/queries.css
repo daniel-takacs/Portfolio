@@ -39,6 +39,9 @@
   .skill h6 {
     font-size: 1.8rem;
   }
+  .icon {
+    width: 50%;
+  }
   /* PROJECT */
   .project-item {
     flex-direction: row;
@@ -47,7 +50,7 @@
     flex-direction: row-reverse;
   }
   .project-item {
-    height: 400px;
+    height: 300px;
     margin: 0;
     width: 100%;
     border-radius: 0;
@@ -55,28 +58,19 @@
   .all-projects .project-description {
     height: 100%;
   }
-  .all-projects .project-img {
+  .project-img {
     height: 100%;
   }
-  .project-description {
-    flex: 1;
-  }
-  .margin-right {
-    margin-right: 2rem;
-  }
+
   .project-description h3 {
     padding: 1rem 0;
   }
- .project-description p {
-   padding: 1rem 0;
- }
-
-  .icon {
-    width: 50%;
+  .project-description p {
+    padding: 1rem 0;
   }
+
   .contact {
     margin-bottom: 0;
-    
   }
   .contact-form {
     width: 70%;
@@ -114,5 +108,10 @@
 @media screen and (min-width: 1000px) {
   .nav-list {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .about-content p {
+    font-size: 2rem;
   }
 }
