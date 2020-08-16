@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   section {
-    margin: 10rem 0;
+    margin: 12rem 0;
   }
   .section-heading {
     letter-spacing: 0.3rem;
@@ -9,6 +9,10 @@
   .section-heading > h6 {
     letter-spacing: 0.3rem;
     font-size: 2rem;
+  }
+  .menu-toggler {
+    top: 5rem;
+    right: 5rem;
   }
   .landing-text h1 {
     font-size: 14rem;
@@ -74,7 +78,7 @@
   }
   .contact-form {
     width: 70%;
-    margin-top: 1rem;
+
   }
   input[type="text"],
   textarea,
