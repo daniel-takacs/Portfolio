@@ -9,7 +9,10 @@
 html {
   font-size: 10px;
   color: white;
-  font-family: "Turret Road", cursive;
+  /*font-family: "Turret Road", cursive;*/
+  font-family: 'Source Code Pro', monospace;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -21,6 +24,7 @@ body {
     rgba(63, 76, 119, 1) 70.2%
   );
   background-size: cover;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -192,9 +196,12 @@ header {
 }
 .landing-text h6 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
-
+.icon-main {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
 /***********/
 /* ABOUT */
 /**********/
@@ -210,6 +217,10 @@ header {
   flex: 1;
   order: 1;
   margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 .profile-img {
   flex: 1;
@@ -218,13 +229,6 @@ header {
 .about-content h2 {
   font-size: 8rem;
   opacity: 0.3;
-}
-.about-content p {
-  margin-top: 2.5rem;
-  font-size: 1.8rem;
-  line-height: 1.5;
-  letter-spacing: 0.2rem;
-  font-weight: 300;
 }
 
 /***********/
@@ -269,6 +273,7 @@ header {
   flex-direction: column;
   margin: 20px auto;
   overflow: hidden;
+  border-radius: 1rem;
 }
 .project-description {
   padding: 30px;
@@ -282,12 +287,13 @@ header {
 }
 .project-description > h3 {
   font-size: 4rem;
-  font-weight: 500;
+  font-weight:400;
 }
 .project-description > h4 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 10px 0;
+  opacity: 0.4;
 }
 .project-description > p {
   color: white;
@@ -295,8 +301,8 @@ header {
   margin-bottom: 1rem;
 }
 .project-description > a {
-  color: black;
-  font-size: 1.2rem;
+  color: #ada8b6;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
 }
 .project-img {
@@ -305,7 +311,22 @@ header {
   overflow: hidden;
   position: relative;
 }
-
+.project-img img {
+  opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.project-img img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
 /***********/
 /* CONTACT */
 /**********/
@@ -331,15 +352,16 @@ select {
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
-  font-family: "Turret Road", cursive;
+  font-family: 'Source Code Pro', monospace;
 }
 input[type="submit"] {
   border-radius: 1rem;
   border: none;
   width: initial;
   padding: 1rem 2rem;
-  font-family: "Turret Road", cursive;
+  font-family: 'Source Code Pro', monospace;
   transition: ease-in-out 0.2s;
+  cursor: pointer;
 }
 input[type="submit"]:hover {
   background-color: #ffb400;
@@ -349,6 +371,35 @@ input[type="submit"]:hover {
 /***********/
 /* FOOTER */
 /**********/
+.up {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  display: flex;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+  align-self: center;
+}
+.up i{
+  font-size: 2rem;
+  margin: auto;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
 .social-media-list-bottom {
   margin-top: 5rem;
 }
@@ -357,7 +408,7 @@ input[type="submit"]:hover {
   justify-content: center;
   margin: 2rem 1rem;
 }
-.fab {
+.icon-bottom {
   font-size: 3rem;
   padding: 1rem 2rem;
 }
@@ -366,7 +417,7 @@ input[type="submit"]:hover {
   transition: color 0.5s;
 }
 
-.fa-github:hover {
+.github-bottom:hover {
   color: #211f1f;
   transition: color 0.5s;
 }
@@ -389,4 +440,5 @@ input[type="submit"]:hover {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 1.5rem;
+ 
 }
