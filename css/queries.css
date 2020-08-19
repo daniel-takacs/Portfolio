@@ -20,7 +20,17 @@
   .landing-text h6 {
     font-size: 2.5rem;
   }
-
+  .profile-img::after {
+    content: '';
+    position: absolute;
+    left: -4rem;
+    top:-4rem;
+    height: 98%;
+    width: 98%;
+    border: 2rem solid white;
+    z-index: -5;
+    opacity: 0.2;
+  }
   .about-content {
     flex-direction: row;
     justify-content: center;
