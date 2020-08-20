@@ -4,7 +4,8 @@
   }
   .section-heading {
     letter-spacing: 0.3rem;
-    font-size: 5rem;
+    font-size: 3rem;
+    margin-bottom: 10rem;
   }
   .section-heading > h6 {
     letter-spacing: 0.3rem;
@@ -29,7 +30,7 @@
     width: 98%;
     border: 2rem solid black;
     z-index: -5;
-    opacity: 0.3;
+    opacity: 0.1;
   }
   .about-content {
     flex-direction: row;
@@ -39,7 +40,6 @@
   }
   .about-text {
     order: 2;
-    text-align: left;
   }
 
   .about-text p {
@@ -51,12 +51,14 @@
     margin-right: 2rem;
     order: 1;
   }
-  .skill h6 {
-    font-size: 1.8rem;
+  .icon-text {
+    font-size: 1.4rem;
   }
   .icon {
-    width: 50%;
+    width: 100%;
+
   }
+  
   /* PROJECT */
   .project-item {
     flex-direction: row;
@@ -127,5 +129,13 @@
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .about-content p {
     font-size: 2rem;
+  }
+  .icon {
+    width: 80%; ;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1150px) {
+  .about-content p {
+    font-size: 2.5rem;
   }
 }

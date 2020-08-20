@@ -10,7 +10,8 @@ html {
   font-size: 10px;
   color: white;
 
-  font-family: "Source Code Pro", monospace;
+  /*font-family: "Source Code Pro", monospace;*/
+  font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -49,7 +50,7 @@ section {
   margin: 0 0 4rem 0;
   font-size: 3rem;
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.5;
   color: black;
 }
 .section-heading h2 {
@@ -69,6 +70,10 @@ section {
 }
 .section-heading > h6 {
   margin-top: 2rem;
+  font-weight: 300;
+}
+.about .skills .projects {
+  margin-bottom: 8rem;
 }
 /***********/
 /* HEADER */
@@ -76,13 +81,14 @@ section {
 header {
   width: 100%;
   height: 100vh;
+  margin-bottom: 8rem;
   background: linear-gradient(
     112.1deg,
     rgba(32, 38, 57, 1) 11.4%,
     rgba(63, 76, 119, 1) 70.2%
   );
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 70px));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 40px));
 }
 .top-nav {
   width: 100%;
@@ -201,7 +207,8 @@ header {
 }
 .icon-main {
   font-size: 3rem;
-  margin-top: 2rem;
+  margin: 2rem 1rem;
+  cursor: pointer;
 }
 /***********/
 /* ABOUT */
@@ -245,7 +252,7 @@ header {
 .my-skills {
   margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
   grid-gap: 2rem;
   text-align: center;
 }
@@ -253,10 +260,22 @@ header {
 .skill {
   font-size: 2rem;
   padding-bottom: 2rem;
+ 
 }
 .icon {
-  width: 30%;
-  padding-bottom: 1rem;
+  width: 80%;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 13px 7px 38px 2px rgba(0,0,0,0.19);
+  font-size: 1rem;
+}
+.icon-text{
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 20rem;
+  background: rgba(70,70,70,0.95);
+  color: white;
+  font-weight: 300;
 }
 
 /***********/
@@ -295,11 +314,11 @@ header {
   flex-direction: column;
 }
 .project-description > h3 {
-  font-size: 4rem;
+  font-size: 2.7rem;
   font-weight: 400;
 }
 .project-description > h4 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 400;
   margin: 10px 0;
   opacity: 0.4;
@@ -324,7 +343,7 @@ header {
 }
 .project-img {
   flex-basis: 50%;
-  height: 300px;
+  max-height: 300px;
   overflow: hidden;
   position: relative;
 }
@@ -376,14 +395,14 @@ select {
   width: 100%;
   padding: 1rem;
   margin: 0.5rem 0;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Inter', sans-serif;
 }
 input[type="submit"] {
   border-radius: 1rem;
   border: none;
   width: initial;
   padding: 1rem 2rem;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Inter', sans-serif;
   transition: ease-in-out 0.2s;
   cursor: pointer;
   color: #333;
@@ -402,7 +421,7 @@ input[type="submit"]:hover {
   flex-direction: column;
   width: 100%;
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -457,7 +476,7 @@ input[type="submit"]:hover {
   transition: color 0.5s;
 }
 
-.github-bottom:hover {
+.fa-github:hover {
   color: #211f1f;
   transition: color 0.5s;
 }
