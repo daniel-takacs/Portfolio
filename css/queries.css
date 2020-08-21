@@ -41,7 +41,6 @@
   .about-text {
     order: 2;
   }
-
   .about-text p {
     font-size: 3rem;
   }
@@ -56,9 +55,7 @@
   }
   .icon {
     width: 100%;
-
   }
-  
   /* PROJECT */
   .project-item {
     flex-direction: row;
@@ -111,13 +108,9 @@
   .social-media-list-bottom > li {
     padding: 0;
   }
-
   .icon-bottom {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-  .icon-main {
-    margin-top: 2rem;
   }
 }
 
@@ -126,14 +119,16 @@
     flex-direction: row;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .about-content p {
     font-size: 2rem;
   }
   .icon {
-    width: 80%; ;
+    width: 80%;
   }
 }
+
 @media screen and (min-width: 901px) and (max-width: 1150px) {
   .about-content p {
     font-size: 2.5rem;
