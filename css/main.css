@@ -558,11 +558,11 @@ input[type="submit"]:hover {
 }
 
 .fa-github:hover {
-  color: #211f1f;
+  color: #ffb400;
   transition: color 0.5s;
 }
 
 .fa-linkedin:hover {
-  color: #0072b1;
+  color: #ffb400;
   transition: color 0.5s;
 }
