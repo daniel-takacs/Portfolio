@@ -1,4 +1,30 @@
-$(document).ready(function () {
+
+AOS.init({
+  easing: "ease",
+  duration: 1800,
+  once: true
+});
+
+const menuToggler = document.querySelector('.menu-toggler');
+const topNav = document.querySelector('.top-nav');
+const navLink = document.querySelectorAll('.nav-link');
+
+menuToggler.addEventListener('click', () => {
+  menuToggler.classList.toggle('open');
+  topNav.classList.toggle('open');
+})
+
+topNav.addEventListener('click', () => {
+  menuToggler.classList.toggle('open');
+  topNav.classList.toggle('open');
+})
+navLink.addEventListener('click', () => {
+  menuToggler.classList.toggle('open');
+  topNav.classList.toggle('open');
+})
+
+  
+/*$(document).ready(function () {
   $(".menu-toggler").on("click", function () {
     $(this).toggleClass("open");
     $(".top-nav").toggleClass("open");
@@ -14,4 +40,4 @@ $(document).ready(function () {
     duration: 1800,
     once: true
   });
-});
+});*/
