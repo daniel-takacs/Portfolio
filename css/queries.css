@@ -1,4 +1,7 @@
 @media screen and (min-width: 768px) {
+  .container {
+    width: 95%;
+  }
   section {
     margin: 12rem 0;
   }
