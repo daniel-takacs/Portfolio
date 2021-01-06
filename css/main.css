@@ -302,7 +302,7 @@ header {
 .my-skills {
   margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
   grid-gap: 2rem;
   text-align: center;
 }
@@ -314,7 +314,7 @@ header {
 
 .icon {
   width: 80%;
-  padding: 3rem;
+  padding: 1rem;
   border-radius: 1.5rem;
   box-shadow: 13px 7px 38px 2px rgba(0, 0, 0, 0.19);
   font-size: 1rem;
@@ -324,9 +324,9 @@ header {
   display: inline-block;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 20rem;
-  background: rgba(70, 70, 70, 0.95);
-  color: white;
-  font-weight: 300;
+  
+  color: black;
+  font-weight: 400;
 }
 
 /***********/
