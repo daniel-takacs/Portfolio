@@ -1,0 +1,37 @@
+/***********/
+
+/* ABOUT */
+
+/**********/
+
+.about .container {
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-text {
+    flex: 1;
+    order: 1;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  
+  .profile-img {
+    flex: 1;
+    order: 2;
+    position: relative;
+  }
+  
+  .about-content h2 {
+    font-size: 8rem;
+    opacity: 0.3;
+  }

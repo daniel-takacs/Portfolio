@@ -1,0 +1,80 @@
+
+/***********/
+
+/* FOOTER */
+
+/**********/
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .up {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    align-self: center;
+    position: relative;
+  }
+  
+  .up i {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.6rem;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .up a {
+    text-decoration: none;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
+  .social-media-list-bottom ul {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 1rem;
+  }
+  
+  .icon-bottom {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+  }
+  
+  .social-media-list-bottom li a {
+    color: white;
+    transition: color 0.5s;
+  }
+  
+  .fa-github:hover {
+    color: #ffb400;
+    transition: color 0.5s;
+  }
+  
+  .fa-linkedin:hover {
+    color: #ffb400;
+    transition: color 0.5s;
+  }
+  
